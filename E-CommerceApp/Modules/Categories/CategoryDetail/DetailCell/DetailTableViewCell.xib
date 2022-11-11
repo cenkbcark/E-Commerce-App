@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="E_CommerceApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIo-eg-9hy">
+                        <rect key="frame" x="3" y="298" width="411" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7eQ-NU-p6p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVZ-Cb-4wG">
+                        <rect key="frame" x="3" y="318" width="411" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1bb-JS-p3m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mxu-RC-VA1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="290"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="290" id="DtB-0k-1rK"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fX4-rH-XNQ">
+                            <size key="itemSize" width="414" height="290"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-Nd-cyd">
+                        <rect key="frame" x="3" y="340" width="411" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="j93-s3-wLm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUc-PD-z0N">
+                        <rect key="frame" x="13" y="418" width="194" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPN-mQ-rx4">
+                        <rect key="frame" x="245" y="408" width="149" height="31"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="149" id="AK0-5v-nN7"/>
+                            <constraint firstAttribute="height" constant="31" id="Txv-FJ-YsB"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Add to Cart">
+                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="addToCartClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TKY-d2-mdc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mxu-RC-VA1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2F7-pi-7X8"/>
+                    <constraint firstAttribute="trailing" secondItem="lIo-eg-9hy" secondAttribute="trailing" id="2xn-em-WZA"/>
+                    <constraint firstAttribute="trailing" secondItem="IVZ-Cb-4wG" secondAttribute="trailing" id="9CO-fL-M9R"/>
+                    <constraint firstAttribute="bottom" secondItem="xPN-mQ-rx4" secondAttribute="bottom" constant="11" id="BnE-20-zXa"/>
+                    <constraint firstItem="xPN-mQ-rx4" firstAttribute="leading" secondItem="sUc-PD-z0N" secondAttribute="trailing" constant="38" id="DF4-7d-tmD"/>
+                    <constraint firstItem="c0r-Nd-cyd" firstAttribute="top" secondItem="IVZ-Cb-4wG" secondAttribute="bottom" constant="1" id="HQW-Qg-MRv"/>
+                    <constraint firstItem="sUc-PD-z0N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="JPQ-Mk-7bV"/>
+                    <constraint firstItem="xPN-mQ-rx4" firstAttribute="top" secondItem="c0r-Nd-cyd" secondAttribute="bottom" constant="1" id="JbF-zq-cSb"/>
+                    <constraint firstItem="c0r-Nd-cyd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="KwU-bk-SgD"/>
+                    <constraint firstItem="lIo-eg-9hy" firstAttribute="top" secondItem="mxu-RC-VA1" secondAttribute="bottom" constant="8" symbolic="YES" id="NY7-ae-mHq"/>
+                    <constraint firstItem="c0r-Nd-cyd" firstAttribute="top" secondItem="IVZ-Cb-4wG" secondAttribute="bottom" constant="1" id="P39-Qd-2y9"/>
+                    <constraint firstAttribute="trailing" secondItem="c0r-Nd-cyd" secondAttribute="trailing" id="TBb-ZI-SYM"/>
+                    <constraint firstItem="mxu-RC-VA1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XIO-Sa-2rP"/>
+                    <constraint firstAttribute="trailing" secondItem="xPN-mQ-rx4" secondAttribute="trailing" constant="20" symbolic="YES" id="Y4M-qc-vY9"/>
+                    <constraint firstItem="IVZ-Cb-4wG" firstAttribute="top" secondItem="mxu-RC-VA1" secondAttribute="bottom" constant="28" id="eHp-D4-KSL"/>
+                    <constraint firstItem="IVZ-Cb-4wG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="geA-Z3-Mc2"/>
+                    <constraint firstItem="lIo-eg-9hy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="iho-ec-X8I"/>
+                    <constraint firstItem="c0r-Nd-cyd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="lmp-Al-NsD"/>
+                    <constraint firstAttribute="trailing" secondItem="mxu-RC-VA1" secondAttribute="trailing" id="pZs-7B-LJW"/>
+                    <constraint firstItem="sUc-PD-z0N" firstAttribute="top" secondItem="c0r-Nd-cyd" secondAttribute="bottom" constant="11" id="toW-0W-viy"/>
+                    <constraint firstAttribute="bottom" secondItem="sUc-PD-z0N" secondAttribute="bottom" constant="8" id="tpQ-3L-p0X"/>
+                    <constraint firstAttribute="trailing" secondItem="c0r-Nd-cyd" secondAttribute="trailing" id="xd8-3c-aJF"/>
+                    <constraint firstItem="lIo-eg-9hy" firstAttribute="top" secondItem="mxu-RC-VA1" secondAttribute="bottom" constant="8" symbolic="YES" id="yhU-uP-c69"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addToCart" destination="xPN-mQ-rx4" id="fpz-bd-g2p"/>
+                <outlet property="collectionView" destination="mxu-RC-VA1" id="q1k-Lc-hZM"/>
+                <outlet property="productBrandLbl" destination="IVZ-Cb-4wG" id="iHt-4i-xTo"/>
+                <outlet property="productDescription" destination="c0r-Nd-cyd" id="S2T-qU-3kN"/>
+                <outlet property="productPriceLbl" destination="sUc-PD-z0N" id="RpE-lt-mL6"/>
+                <outlet property="productTitleLbl" destination="lIo-eg-9hy" id="WWw-pL-vu3"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

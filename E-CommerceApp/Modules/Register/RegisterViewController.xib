@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="E_CommerceApp" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="VPf-gU-mfi" id="e56-ou-sJD"/>
+                <outlet property="emailTextField" destination="fKl-4Z-WJi" id="q0U-NJ-r7N"/>
+                <outlet property="passwordAgainTextField" destination="U03-ym-gRJ" id="NNg-lo-Oy7"/>
+                <outlet property="passwordTextField" destination="mgD-0U-Lmk" id="eJ0-7F-hH1"/>
+                <outlet property="registerButton" destination="Cuc-TT-WrJ" id="Opp-N0-GFa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-4u-Vdy">
+                    <rect key="frame" x="20" y="350" width="374" height="211"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKl-4Z-WJi">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="FuM-9r-fuu"/>
+                                <constraint firstAttribute="width" constant="374" id="bqh-U3-h6E"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgD-0U-Lmk">
+                            <rect key="frame" x="0.0" y="59" width="374" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="374" id="Qb1-En-kM1"/>
+                                <constraint firstAttribute="height" constant="34" id="Uzw-tX-m6w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password again" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U03-ym-gRJ">
+                            <rect key="frame" x="0.0" y="118" width="374" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="374" id="Mie-lS-D5E"/>
+                                <constraint firstAttribute="height" constant="34" id="eFf-kX-HGc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-TT-WrJ">
+                            <rect key="frame" x="0.0" y="177" width="374" height="34"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                            <connections>
+                                <action selector="registerBtnClicked:" destination="-1" eventType="touchUpInside" id="9Qb-LO-DNF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPf-gU-mfi" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="20" y="44" width="374" height="298"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VPf-gU-mfi" secondAttribute="trailing" constant="20" id="HqO-VV-wV6"/>
+                <constraint firstItem="VPf-gU-mfi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LJM-td-qGS"/>
+                <constraint firstItem="fj2-4u-Vdy" firstAttribute="top" secondItem="VPf-gU-mfi" secondAttribute="bottom" constant="8" symbolic="YES" id="eDs-Rq-3lF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fj2-4u-Vdy" secondAttribute="trailing" constant="20" id="kpS-ah-i7y"/>
+                <constraint firstItem="fj2-4u-Vdy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uva-VA-ycz"/>
+                <constraint firstItem="fj2-4u-Vdy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="306" id="xFL-3A-5HM"/>
+                <constraint firstItem="VPf-gU-mfi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yzV-0r-pNo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
