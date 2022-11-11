@@ -27,7 +27,7 @@
 -Loading Manager
 -Without storyboard. UIViewController and Cell xib.
 -Card Mechanics
--DummyJSON API used for productsç
+-DummyJSON API used for products
 -Firebase Auth, Remote Config and Realtime Database
 -Lottie Animations
 -Progress HUD
