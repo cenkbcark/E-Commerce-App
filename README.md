@@ -2,7 +2,7 @@
 
 ```html
 -I've used Firebase for registration and login system.
--All the product data in app is coming from an API.
+-All the products data in app is coming from an API.
 -While ordering, all the orders is uploading to Firebase Realtime Database.
 -All the user can follow their previous orders in profile tab and see their progress.
 -I've build a admin panel where can see all the orders.
