@@ -1,12 +1,12 @@
 # E-Commerce-App
 
 ```html
-I've used Firebase for registration and login system.
-All the product data in app is coming from an API.
-While ordering, all the orders is uploading to Firebase Realtime Database.
-All the user can follow their previous orders in profile tab and see their progress.
-I've build a admin panel where can see all the orders.
-When Admin confirm the order, it will synchronously reflect to user panel.
+-I've used Firebase for registration and login system.
+-All the product data in app is coming from an API.
+-While ordering, all the orders is uploading to Firebase Realtime Database.
+-All the user can follow their previous orders in profile tab and see their progress.
+-I've build a admin panel where can see all the orders.
+-When Admin confirm the order, it will synchronously reflect to user panel.
 ```
 
 
